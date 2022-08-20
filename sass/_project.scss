@@ -1,0 +1,214 @@
+#projects_sec {
+    background: #f3f3f3;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.project_topic {
+    display: grid;
+    place-items: center;
+    padding-top: 1.5rem;
+  
+}
+
+.project_main {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    place-items: center;
+}
+
+.project_card {
+    width: 70%;
+    display: flex;
+    flex-direction:row;
+    border-radius: .3rem;
+    box-shadow: .2rem .4rem .3rem .2rem #AAA492;
+    margin: 1rem 0;
+    // background: #CEE5D0;
+}
+
+.project_card:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.project_card .project_img img {
+    width: 23rem;
+    height: 14rem;
+}
+
+.project_card .project_cont {
+    padding: 1rem 2rem;
+    position: relative;
+}
+.project_cont h2 a {
+    text-decoration: none;
+    color: #000;
+transition: 1s;
+cursor: pointer;
+&:hover {
+   color: #7FC8A9;
+}
+}
+
+.project_cont p {
+    margin-bottom: 0;
+}
+
+// .project_card:nth-child(2n) .project_cont a {
+//     left: 2rem;
+//     width: 7.8rem;
+// }
+
+@media only screen and (max-width: 1245px) and (min-width: 1000px) {
+    .project_card {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 999px) and (min-width: 830px) {
+    .project_card {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 830px) and (min-width: 650px) {
+    .project_card {
+        width: 97%;
+        font-size: .9rem;
+    }
+    .project_card .project_img img {
+        width: 20rem;
+        height: 12rem;
+    }
+}
+@media only screen and (max-width: 650px) and (min-width: 500px) {
+    .project_card {
+        flex-direction: column;
+        font-size: .9rem;
+        width: 65%;
+   }
+    .project_card:nth-child(2n) {
+        flex-direction: column;
+    }
+    .project_card .project_img img {
+        width: 100%;
+        height: 12rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .project_card {
+        flex-direction: column;
+        font-size: .9rem;
+        width: 85%;
+   }
+   .project_card:nth-child(2n) {
+    flex-direction: column;
+}
+.project_card .project_img img {
+    width: 100%;
+    height: 12rem;
+}
+}
+
+
+
+
+//    PROJECT TRIAL
+
+#project_secs {
+    background-color: #012443;
+}
+.proj_topic {
+    padding:1rem 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+.proj_topic > h2 {
+    padding: 1rem 0 0;
+    color: #fff; 
+    position: relative; 
+    &::after {
+        content:"";
+        position: absolute;
+        height: .2rem;
+        width: 5rem;
+        background:  #E6DDC4;
+        bottom: 0rem;
+        left: 15%;
+    }
+}
+.overlay p {
+    visibility: hidden;
+  transition: 1s;
+  transform: translateY(2rem);
+}
+.overlay .link_div  {
+    margin-top: 17rem; 
+    display: flex;
+    justify-content: space-between;
+    background: #297F87;
+    padding: .4rem 1rem;
+    border-radius: .2rem;
+    width: 70%;
+    transition: .7s;
+    transform: translateY(2rem);
+    & a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: #fff;
+    }
+    & .fas {
+        transform: translateY(.5rem);
+          }
+          &:hover .fas{
+            color: #000;
+        }
+
+}
+.projectaw {
+padding-left: 0rem !important;
+padding-right: 0 !important;
+padding-bottom: 1rem;
+cursor: pointer;
+width: 25%;
+  position: relative;
+  &:hover .overlay {
+    background-color: rgba(0, 0, 0, .9);
+  }
+  &:hover .overlay p {
+      visibility: visible;
+  }
+  &:hover .overlay .link_div  {
+    margin-top: 0rem;
+}
+}
+.projectaw img {
+  height: 14rem;
+  width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0);
+    transition: 1s;
+    overflow: hidden;
+}
+
+.proj_hr {
+    border-bottom: none;
+    border-top: 1rem dotted #D3E4CD;
+    border-width: .6rem; 
+    margin: auto;
+    width: 3%;
+    background-color: none;
+}
+
